@@ -22,7 +22,7 @@ IF NOT EXIST %filePath%%newName% (
         --crop_size 256 ^
         --output_depth 8 ^
         --process cpu ^
-        --model_dir %~dp0\waifu2x-caffe\models\anime_style_art_rgb ^
+        --model_dir %~dp0waifu2x-caffe\models\anime_style_art_rgb ^
         --scale_ratio 0.5 ^
         --noise_level 2 ^
         --mode noise_scale ^
