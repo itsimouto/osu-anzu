@@ -2,3 +2,4 @@
 assets/bin/waifu2x-caffe/*
 !
 assets/bin/waifu2x-caffe/README.md
+assets/psd/
