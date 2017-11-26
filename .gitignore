@@ -1,5 +1,5 @@
-
+anzu/
 assets/bin/waifu2x-caffe/*
 !
-assets/bin/waifu2x-caffe/README.md
-assets/psd/
+anzu/assets/bin/waifu2x-caffe/README.md
+anzu/assets/psd/
