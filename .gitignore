@@ -1,0 +1,7 @@
+
+anzu/assets/bin/waifu2x-caffe/*
+
+!
+anzu/assets/bin/waifu2x-caffe/README.md
+
+anzu/assets/psd/*.psd
