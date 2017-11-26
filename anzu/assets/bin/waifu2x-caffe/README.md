@@ -2,9 +2,8 @@ Download: https://github.com/lltcggie/waifu2x-caffe/releases
 
 Tree after extraction:
 ```
+assets
 ├───bin
-│   │   downscale.bat
-│   │
 │   └───waifu2x-caffe
 │       ├───cudnn_data
 │       ├───lang
@@ -15,5 +14,6 @@ Tree after extraction:
 │           ├───ukbench
 │           ├───upconv_7_anime_style_art_rgb
 │           └───upconv_7_photo
-└───images
+├───images
+└───psd
 ```
