@@ -2,7 +2,7 @@
 REM Generates the standard-definition resolution images of their high-definition counterparts (@2x suffix).
 
 REM This script may not work if this file tree is not preserved.
-cd %~dp0..\..
+CD /D %~dp0..\..
 
 FOR /R %cd% %%f IN (*@2x.png) DO (
     CALL :waifu2x %%~dpf %%~nxf
@@ -34,6 +34,6 @@ IF NOT EXIST %filePath%%newName% (
         --output_path %filePath%%newName% ^
         --input_path %filePath%%filename%
 ) ELSE (
-    echo Already exists: %filePath%%newName%
+    ECHO Already exists: %filePath%%newName%
 )
 ECHO.

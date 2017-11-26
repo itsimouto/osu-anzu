@@ -1,7 +1,11 @@
-# Run powershell -ExecutionPolicy Bypass .
-# Call this script from the skin's root (e.g., cd ...\osu!\Skins\yourSkinName).
-# Lists all file/directory links.
-dir -force | ?{$_.LinkType} | select `
+# Run powershell -ExecutionPolicy Bypass , then call this script.
+# Dumps a listLinks.txt with all file/directory links.
+# Issue: Also lists target files as HardLinks when they should be excluded. Needs to be fixed.
+
+cd $PSScriptRoot\..\..
+
+dir -recurse -force | ?{$_.LinkType} | select `
 @{ Name="File Name"; Expression={$_.FullName | Resolve-Path -Relative} }, `
 @{ Name="Type"; Expression={$_.LinkType} }, `
-@{ Name="Target"; Expression={$_.Target[0] | Resolve-Path -Relative} }
+@{ Name="Target"; Expression={$_.Target[0] | Resolve-Path -Relative} } `
+| Out-File $PSScriptRoot\listLinks.txt
