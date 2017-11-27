@@ -21,8 +21,6 @@ IF NOT EXIST %filePath%%newName% (
     REM Decrease batch_size and crop_size if you have inadequate RAM (currently using up to 6 GB RAM).
     REM --model_dir is essential to processing speed.
     %~dp0waifu2x-caffe\waifu2x-caffe-cui.exe ^
-        --tta 0 ^
-        --batch_size 16 ^
         --crop_size 256 ^
         --output_depth 8 ^
         --process cpu ^
@@ -32,7 +30,5 @@ IF NOT EXIST %filePath%%newName% (
         --mode noise_scale ^
         --output_path %filePath%%newName% ^
         --input_path %filePath%%filename%
-) ELSE (
-    ECHO Already exists: %filePath%%newName%
 )
 ECHO.
