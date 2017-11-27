@@ -9,7 +9,6 @@ FOR /R %cd% %%f IN (*@2x.png) DO (
 )
 
 ECHO Finished.
-PAUSE
 
 :waifu2x
 SET filePath=%1
