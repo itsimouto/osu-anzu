@@ -1,0 +1,1 @@
+﻿Download: https://github.com/lltcggie/waifu2x-caffe/releases
